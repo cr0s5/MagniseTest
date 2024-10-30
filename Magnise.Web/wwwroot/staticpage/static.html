@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Example</title>
+</head>
+<body>
+    <h1>Login form</h1>
+    <form action="/api/user/login" method="POST">
+        <div>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" required placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <h1>WebSocket Example</h1>
+    <p>Open the console to see WebSocket messages.</p>
+
+    <button id="openButton">Open Connection</button>
+    <button id="closeButton">Close Connection</button>
+
+    <br />
+    <br />
+
+    <input type="text" id="instrument-id" placeholder="Type instrument id">
+    <button id="subscribeButton">Subscribe</button>
+    <p id="response"></p>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
